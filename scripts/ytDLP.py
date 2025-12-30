@@ -36,7 +36,7 @@ class VideoSearcher():
                 'format': 'bestaudio/best',
                 'quiet': True,
                 'noplaylist': True,
-                'cookies': self.cookies_path,
+                'cookiefile': str(self.cookies_path),
                 'cachedir': False,
             }
             with YoutubeDL(yt_dlp_options) as ytdlp:
@@ -58,7 +58,7 @@ class VideoSearcher():
                 'format': 'bestaudio/best',
                 'quiet': True,
                 'noplaylist': True,
-                'cookies': self.cookies_path,
+                'cookiefile': str(self.cookies_path),
                 'cachedir': False,
                 'default_search': 'ytsearch',
                 'max_downloads': 1
@@ -84,7 +84,7 @@ class VideoSearcher():
                 'format': 'bestaudio/best',
                 'quiet': True,
                 'noplaylist': True,
-                'cookies': self.cookies_path,
+                'cookiefile': str(self.cookies_path),
                 'cachedir': False,
                 'default_search': 'ytsearch10',
                 'ignoreerrors': True,
@@ -112,7 +112,7 @@ class VideoSearcher():
                 'format': 'bestaudio/best',
                 'quiet': False,
                 'extract_flat': 'in_playlist',
-                'cookies': self.cookies_path,
+                'cookiefile': str(self.cookies_path),
                 'cachedir': False
             }
             with YoutubeDL(yt_dlp_options) as ytdlp:
@@ -135,7 +135,7 @@ class VideoSearcher():
                 'format': 'bestaudio/best',
                 'quiet': False,
                 # 'extract_flat': 'in_playlist',
-                'cookies': self.cookies_path,
+                'cookiefile': str(self.cookies_path),
                 'cachedir': False,
                 'ignoreerrors': True
             }
